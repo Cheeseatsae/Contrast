@@ -65,7 +65,7 @@
                 half4 c2 = tex2D(_SecondTex, IN.uv_MainTex) * _Color2;
              
                 // triplanar noise
-                 float3 blendNormal = saturate(pow(IN.worldNormal * 1.4,4));
+                float3 blendNormal = saturate(pow(IN.worldNormal * 1.4,4));
                 half4 nSide1 = tex2D(_NoiseTex, (IN.worldPos.xy + _Time.x) * _NScale);
                 half4 nSide2 = tex2D(_NoiseTex, (IN.worldPos.xz + _Time.x) * _NScale);
                 half4 nTop = tex2D(_NoiseTex, (IN.worldPos.yz + _Time.x) * _NScale);
