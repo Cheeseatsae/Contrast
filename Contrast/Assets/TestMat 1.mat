@@ -23,15 +23,21 @@ Material:
         m_Texture: {fileID: 2800000, guid: a1b92568b8275214bbaac8ebe1053438, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SecondTex:
         m_Texture: {fileID: 2800000, guid: a60f1ed9648173647b241b7b39b8ed0e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _NoiseAmount: 0.3
     - _Transparency: 1
     - _Xpos: 0.422
-    - _XposCutoff: 4
+    - _XposCutoff: 10000
     - _XposStart: 2
     m_Colors:
     - _Colour: {r: 1, g: 1, b: 1, a: 1}
     - _Colour2: {r: 1, g: 1, b: 1, a: 1}
+    - _NoiseColour: {r: 1, g: 1, b: 1, a: 1}

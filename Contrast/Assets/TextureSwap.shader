@@ -3,6 +3,9 @@
     Properties
     {
         _MainTex ("Main Texture", 2D) = "white" {}
+        _Noise ("Noise Texture", 2D) = "white" {}
+        _NoiseAmount ("Noise Amount", range(0,1)) = 0.3
+        _NoiseColour ("Noise Colour", Color) = (1,1,1,1)
         _XposCutoff ("_XposCutoff", float) = 1
         _XposStart ("_XposStart", float) = 1
         _Colour ("Primary Color", Color) = (1,1,1,1)
@@ -34,10 +37,9 @@
                 float4 worldPos : TEXCOORD2;
             };
 
-            sampler2D _MainTex;
-            float4 _Colour;
-            float _XposCutoff;
-            float _XposStart;
+            sampler2D _MainTex, _Noise;
+            float4 _Colour, _NoiseColour;
+            float _XposCutoff, _XposStart, _NoiseAmount;
             
             v2f vert (appdata v)
             {
@@ -54,6 +56,9 @@
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
+                
+                
+                
                 // IF FRIST GREATER THAN/EQUAL TO SECOND = 1
                 // OTHERWISE 0
                 col.a = lerp(0, col.a, step(_XposStart, i.worldPos.x));
