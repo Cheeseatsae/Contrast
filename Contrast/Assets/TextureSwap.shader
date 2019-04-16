@@ -57,7 +57,7 @@
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
                 
-                
+                // worldpos.x - noise amount = new tex
                 
                 // IF FRIST GREATER THAN/EQUAL TO SECOND = 1
                 // OTHERWISE 0
