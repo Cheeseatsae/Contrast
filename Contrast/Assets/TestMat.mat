@@ -32,12 +32,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Amount: 0.4
+    - _Amplitude: 420
+    - _Distance: 1.16
+    - _LineWidth: 0.05
     - _NoiseAmount: 0.3
+    - _Speed: 0.51
     - _Transparency: 1
     - _Xpos: 0.422
     - _XposCutoff: 2
     - _XposStart: -10000
     m_Colors:
-    - _Colour: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour: {r: 0.25956106, g: 0, b: 1, a: 1}
     - _Colour2: {r: 1, g: 1, b: 1, a: 1}
+    - _LineColour: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColour: {r: 1, g: 1, b: 1, a: 1}

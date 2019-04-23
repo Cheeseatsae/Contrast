@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TestMat 1
+  m_Name: Black
   m_Shader: {fileID: 4800000, guid: e1f6e7e90beba0243ba6264d2db0a086, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a60f1ed9648173647b241b7b39b8ed0e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8d56d1b07e7a7ce42ac133f3ce9a4e18, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise:
@@ -32,18 +32,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amount: 1
-    - _Amplitude: 1
-    - _Distance: 0.2
-    - _LineWidth: 0.05
+    - _Amount: 0.4
+    - _Amplitude: 327.1
+    - _Distance: 1.13
+    - _LineWidth: 0.186
     - _NoiseAmount: 0.3
-    - _Speed: 1
+    - _Speed: 0.51
     - _Transparency: 1
     - _Xpos: 0.422
-    - _XposCutoff: 10000
-    - _XposStart: 2
+    - _XposCutoff: 2
+    - _XposStart: -10000
     m_Colors:
-    - _Colour: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour: {r: 0.25956106, g: 0, b: 1, a: 1}
     - _Colour2: {r: 1, g: 1, b: 1, a: 1}
     - _LineColour: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColour: {r: 1, g: 1, b: 1, a: 1}
