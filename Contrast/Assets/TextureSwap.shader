@@ -74,8 +74,8 @@
                 float width2 = sin((_SinTime.y * _Speed + _LineWidth * _Amplitude) * i.worldPos.y) * _Distance * _Amount * -1;
                 
                 // changing colour of texture to line colour
-                col.rgb = lerp(_LineColour * _SinTime, col.rgb, step(_XposStart + (width * _SinTime), i.worldPos.x));
-                col.rgb = lerp(col.rgb, _LineColour * _SinTime, step(_XposCutoff - (width2 * _SinTime), i.worldPos.x));
+                col.rgb = lerp(_LineColour * _SinTime, col.rgb, step(_XposStart + 0.05 + (width * _SinTime), i.worldPos.x));
+                col.rgb = lerp(col.rgb, _LineColour * _SinTime, step(_XposCutoff - 0.05 - (width2 * _SinTime), i.worldPos.x));
                 
                 col.rgb *= col.a;
                 

@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &44122133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 8d56d1b07e7a7ce42ac133f3ce9a4e18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -253,7 +253,7 @@ SpriteRenderer:
   m_Size: {x: 10, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &44122134
@@ -734,7 +734,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1464569310
@@ -1079,12 +1079,12 @@ PrefabInstance:
     - target: {fileID: 5017115952695070923, guid: b3b1f1d17fc4fde4182d34363a6d3f93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.234
+      value: -4.51
       objectReference: {fileID: 0}
     - target: {fileID: 5017115952695070923, guid: b3b1f1d17fc4fde4182d34363a6d3f93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.77
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 5017115952695070923, guid: b3b1f1d17fc4fde4182d34363a6d3f93,
         type: 3}
