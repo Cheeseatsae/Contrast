@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (WorldManager.Paused) return;
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump?.Invoke();
@@ -74,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (WorldManager.Paused) return;
+        
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
         {
             body.velocity = new Vector2(Mathf.Lerp(body.velocity.x, 0, braking * 2), body.velocity.y);
@@ -92,10 +96,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D other)
     {
+        if (WorldManager.Paused) return;
+        
         foreach (ContactPoint2D hit in other.contacts)
         {
-            // Debug.Log(hit.normal);
-            Debug.DrawRay(hit.point, hit.normal, Color.red, 1.25f);
 
             if (hit.normal.y > 0.5f) // if on a semi flat ground, we're grounded
                 mState = MoveState.Grounded;
@@ -106,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void AttemptToJump()
     {
+        if (WorldManager.Paused) return;
         
         if (mState != MoveState.Grounded) return;
         mState = MoveState.Airborne;
