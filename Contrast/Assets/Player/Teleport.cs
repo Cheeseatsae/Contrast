@@ -17,32 +17,20 @@ public class Teleport : MonoBehaviour
         if (player.transform.position.x < xLeft)
         {
             Vector3 p = player.transform.position;
-            cam.transform.SetParent(player.transform, true);
             player.transform.position = new Vector3(xRight - offset, p.y, p.z);
-            cam.transform.SetParent(cam.transform, true);
         }
 
         if (player.transform.position.x > xRight)
         {
             Vector3 p = player.transform.position;
-            cam.transform.SetParent(player.transform, true);
             player.transform.position = new Vector3(xLeft + offset, p.y, p.z);
-            cam.transform.SetParent(cam.transform, true);
         }
     }
 
-    private void TeleportCamera()
+    private void OnDrawGizmos()
     {
-        Vector3 p = player.transform.position;
-        Vector3 c = cam.transform.position;
-
-        cam.transform.SetParent(player.transform);
-        
-        Vector3 diff = p - c;
-        Debug.Log(diff);
-
-        cam.transform.position = new Vector3(p.x + diff.x,p.y + diff.y, c.z);
-        Debug.Log(player.transform.position - cam.transform.position); 
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(new Vector3(xLeft, 0, 0), new Vector3(0.02f, 100, 30));
+        Gizmos.DrawCube(new Vector3(xRight, 0, 0), new Vector3(0.02f, 100, 30));
     }
-    
 }
